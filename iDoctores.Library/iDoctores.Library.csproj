@@ -35,9 +35,12 @@
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataAccess\Entities\Seguridad\UsuarioEntity.cs" />
+    <Compile Include="DataAccess\Entities\Context\SeguridadContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
@@ -53,6 +56,11 @@
     <Folder Include="Service\objects\" />
     <Folder Include="Service\providers\" />
     <Folder Include="Utilities\" />
+    <Folder Include="DataAccess\Entities\Seguridad\" />
+    <Folder Include="DataAccess\Entities\Context\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.276\build\NuGet.Build.Packaging.targets')" />
